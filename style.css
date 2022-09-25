@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(40deg,
+            rgba(0, 212, 255, 1) 0%,
+            rgba(251, 82, 131, 1) 100%);
+
+     display: flex;   
+     justify-content: center;   
+     align-items: center; 
+     height: 100vh;
+     
+}
+ .container{
+    width: 80%;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, 0.2);
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    overflow: hidden;
+
+ }
+ .navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+ }
+
+.logo{
+    width: 50px;
+    margin: 30px 0 30px 10px;
+}
+nav{
+    width:100%;
+    text-align: right;
+
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+   
+}
+.nav-link{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    
+}
+.nav-link:hover{
+    color: #fb5283;
+}
+.row{
+    display: flex;
+    justify-content: space-between;  /* serve para separar s itens no mesmo ambiente*/
+    align-items: center;
+    margin: 100px 0;
+    
+
+
+
+}
+.colunm-1{
+    margin-left: 50px;
+    position: relative;
+    
+}
+
+
+h2{
+    font-size: 60px;
+    width: 100px;
+}
+h3{
+    font-size: 40px;
+    color:#707070;
+    font-weight: 100;
+    margin: 20px 0;
+}
+.colunm-1 p {
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+
+.colunm-1::before{
+    content: "";
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(40deg,
+            rgba(0, 212, 255, 1) 0%,
+            rgba(251, 82, 131, 1) 100%);
+         position: absolute;
+         left: -40px;
+         top: 8px;
+}
+h4{
+    font-size: 20px;
+    color: #000;
+    margin: 30px 0;
+}
+
+.Buy{
+    width: 140px;
+    padding: 12px 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+}
+
+.colunm-2{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.controller{
+    margin-left: auto;
+    width: 70%;
+    z-index: 2;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    height: 100%;
+    width: 90%;
+    border-radius: 20px 0 0 20px;
+    z-index: 1;
+    transform: translateX(550px);
+
+
+}
+
+.add-cart{
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    cursor:pointer
+    
+}
+.add-cart img{
+    width: 45px;
+    height: 45px;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.social-links img{
+    height: 30px;
+    margin: 20px;
+    cursor: pointer ;
+}
+
