@@ -13,57 +13,64 @@
 </head>
 
 <body>
-
-    <main class="container">
-        <header class="navbar">
-            <img class="logo" src="./assets/logo.png" />
-
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="./assets/logo.png" alt="logo">
             <nav>
-                <ul>
-                    <li><a class="nav-link">Consoles</a></li>
-                    <li><a class="nav-link">Acessórios</a></li>
-                    <li><a class="nav-link">Controles</a></li>
-                    <li><a class="nav-link">Outros</a></li>
+                <ul id="menu-list">
+                    <li class="nav-li"><a class="nav-link">Consoles</a></li>
+                    <li class="nav-li"><a class="nav-link">Acessórios</a></li>
+                    <li class="nav-li"><a class="nav-link">Controles</a></li>
+                    <li class="nav-li"><a class="nav-link">Outros</a></li>
                 </ul>
             </nav>
-        </header>
-        
-        <div class="row">
-           <section class="colunm-1">
-                 <h2> PS5 Dualshok</h2>
-                 <h3> Wireless Controller for PlayStation</h3>
-                 <p>Controle Original</p>
-                 <h4>R$ 222,50</h4>
-                 <button class="Buy">Comprar agora</button>
-           </section>
-
-           <section class="colunm-2">      
-            <img class="controller" src="./assets/controller.png"/>
-            <div class="color-box"></div>
-            <button class="add-cart">
-                <img src="./assets/add.png" alt="Adicionar-ao-carrinho!"/>
-            </button>
-
-           </section> 
-
+            <img  src="./assets/menu.png" alt="button-icon" id="menu-icon" onclick="showMenu()" >
         </div>
 
-           <footer class="social-links"> 
-            <img src="./assets/fb.png"/>
-            <img src="./assets/ig.png"/>
-            <img src="./assets/tw.png"/>
-           </footer>
 
-       
+        <div class="row">
+            <div class="column-1">
+                <h2>PS5 Dualshok</h2>
+                <h3>Wireless Controller for PlayStation</h3>
+                <p>Controle Original</p>
+                <h4>R$ 222,50</h4>
+                <button class="buy">Comprar agora</button>
+            </div>
 
-    </main>
+            <div class="column-2">
+                <img class="controller" src="./assets/controller.png" alt="controle">
+                <div class="color-box"></div>
+                <button class="add-cart">
+                    <img src="./assets/add.png" alt="adicionar-ao-carrinho">
+                </button>
+            </div>
+        </div>
 
+        <div class="social-links">
+            <img src="./assets/fb.png">
+            <img src="./assets/ig.png">
+            <img src="./assets/tw.png">
+        </div>
 
+    </div>
+   </body>
 
+<script>
 
+    const menuList = document.getElementById("menu-list")
+          menuList.style.maxHeight = "0px"
 
-</body>
+    function showMenu(){
 
+        if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "120px"
 
+        } else {
+            menuList.style.maxHeight == "0px"
+        }
+
+    }
+   
+</script>
 
 </html>
