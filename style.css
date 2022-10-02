@@ -117,16 +117,39 @@ h4 {
 }
 
 .buy {
-  width: 140px;
+ 
+  width: 167px;
   border: none;
   padding: 12px 10px;
   outline: none;
   color: #fff;
-  border-radius: 6px;
+  border-radius: 14px;
   cursor: pointer;
   z-index: 2;
   background: linear-gradient(to right, #fb5283, #ff3527);
+  transition: all 1s ease-in-out;
 }
+
+.buy img {
+  width: 30px;
+  display: none;
+}
+
+.buy:hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ 
+
+}
+
+.buy:hover img {
+  display: block;
+  
+
+}
+
 
 .column-2 {
   display: flex;
@@ -138,6 +161,7 @@ h4 {
   width: 90%;
   z-index: 2;
   height: 255px;
+  animation: moverController 2s infinite alternate ease-in-out 
 }
 
 .color-box {
@@ -160,8 +184,9 @@ h4 {
 }
 
 .add-cart img {
-  height: 45px;
-  width: 45px;
+  height: 100%;
+  width: 100%;
+  max-width: 55px;
 }
 
 .social-links {
@@ -185,7 +210,7 @@ h4 {
     width: 100vw;
     height: 100vh;
     border-radius: 0;
-    overflow: auto;
+    overflow-y: auto;
 
 
   }
@@ -195,6 +220,8 @@ h4 {
     top: 61px;
     left: 61px;
     overflow: hidden;
+    cursor: pointer;
+    transition: all  0.8s ease-in-out;
   }
 
   .nav-li {
@@ -205,16 +232,31 @@ h4 {
 
   #menu-icon {
     display: block;
+    width: 20px;
+    cursor: pointer;
+    
 
   }
-
 
 
   .row {
     flex-direction: column-reverse;
   }
 
-  .column-1 {
+  .column-2 {
     margin-bottom: 30px;
   }
+
+  .column-1 {
+    text-align: center;
+  }
+
+
+}
+
+@keyframes moverController{
+from{
+  transform: translate(-5%, -5%) rotate(-5deg);
+}
+
 }

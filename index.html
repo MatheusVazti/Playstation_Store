@@ -24,17 +24,18 @@
                     <li class="nav-li"><a class="nav-link">Outros</a></li>
                 </ul>
             </nav>
-            <img  src="./assets/menu.png" alt="button-icon" id="menu-icon" onclick="showMenu()" >
+            <img  src="./assets/menu.png" alt="button-icon" id="menu-icon" onclick="clickMenu()" >
+
         </div>
 
 
-        <div class="row">
+        <div class= "row">
             <div class="column-1">
                 <h2>PS5 Dualshok</h2>
                 <h3>Wireless Controller for PlayStation</h3>
                 <p>Controle Original</p>
                 <h4>R$ 222,50</h4>
-                <button class="buy">Comprar agora</button>
+                <button class="buy">Comprar agora <img src="./assets/arrow.png" alt="seta"></button>
             </div>
 
             <div class="column-2">
@@ -56,20 +57,19 @@
    </body>
 
 <script>
-
     const menuList = document.getElementById("menu-list")
-          menuList.style.maxHeight = "0px"
+            menuList.style.maxHeight = "0px"
 
-    function showMenu(){
+            function clickMenu() {
+                if(menuList.style.maxHeight == "0px"){
+                    menuList.style.maxHeight = "120px"       
+                
+            }else{
+                menuList.style.maxHeight == "0px"
 
-        if(menuList.style.maxHeight == "0px"){
-            menuList.style.maxHeight = "120px"
+            }
 
-        } else {
-            menuList.style.maxHeight == "0px"
         }
-
-    }
    
 </script>
 
